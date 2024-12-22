@@ -59,9 +59,9 @@ with app.app_context():
 
 # Routes
 
-@app.route('/test', methods=['GET'])
+@app.route('/', methods=['GET'])
 def test_connection():
-    return 'Ready to work'
+    return 'Ready to work.\n Methods:\n POST(/login, /logout, /add_user, /add_author, /add_book)\n GET(/get_book, /get_author, /get_all_books)\n DELETE(/delete_book/<int:id>, /delete_author/<int:id>)\n PUT(/update_book/<int:id>)'
 
 @app.route('/login', methods=['POST'])
 def login():
