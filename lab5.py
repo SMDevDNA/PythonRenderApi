@@ -4,7 +4,7 @@ from flask_jwt_extended import JWTManager, create_access_token, jwt_required, ge
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://CLICK_TO:REVEAL_PASSWORD@pg-32b22183-py-api-test-db.c.aivencloud.com:12811/defaultdb?sslmode=require'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://avnadmin:AVNS_h1CF9J3jlqE_axHiUEf@pg-32b22183-py-api-test-db.c.aivencloud.com:12811/defaultdb?sslmode=require'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['JWT_SECRET_KEY'] = 'test'  # Change to a secure key
 db = SQLAlchemy(app)
