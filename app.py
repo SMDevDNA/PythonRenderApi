@@ -5,11 +5,11 @@ from psycopg2 import sql
 app = Flask(__name__)
 
 # Настройки подключения
-host = "your-hostname.aivencloud.com"  # замените на ваш хост
-port = 5432  # стандартный порт PostgreSQL
-dbname = "your-database-name"  # имя базы данных
-user = "your-username"  # имя пользователя
-password = "your-password"  # пароль
+host = "pg-32b22183-py-api-test-db.c.aivencloud.com"  # замените на ваш хост
+port = 12811  # стандартный порт PostgreSQL
+dbname = "defaultdb"  # имя базы данных
+user = "avnadmin"  # имя пользователя
+password = "AVNS_h1CF9J3jlqE_axHiUEf"  # пароль
 
 # Функция для подключения к базе данных
 def get_db_connection():
